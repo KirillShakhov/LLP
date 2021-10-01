@@ -1,0 +1,1 @@
+/opt/homebrew/bin/nasm CMakeFiles/main.dir/src/hello.asm.o -o main 

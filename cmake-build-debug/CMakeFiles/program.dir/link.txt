@@ -1,0 +1,1 @@
+/opt/homebrew/bin/nasm  -felf64 CMakeFiles/program.dir/hello.asm.o -o program 
