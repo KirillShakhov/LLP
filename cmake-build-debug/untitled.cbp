@@ -37,8 +37,8 @@
 					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/kirill/CLionProjects/llp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="program">
-				<Option output="/Users/kirill/CLionProjects/llp/cmake-build-debug/program" prefix_auto="0" extension_auto="0"/>
+			<Target title="Makefile">
+				<Option output="/Users/kirill/CLionProjects/llp/cmake-build-debug/Makefile" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir=""/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -52,14 +52,14 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/kirill/CLionProjects/llp/cmake-build-debug/Makefile&quot;  VERBOSE=1 program"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/kirill/CLionProjects/llp/cmake-build-debug/Makefile&quot;  VERBOSE=1 Makefile"/>
 					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/kirill/CLionProjects/llp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j8 -f &quot;/Users/kirill/CLionProjects/llp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/kirill/CLionProjects/llp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="program/fast">
-				<Option output="/Users/kirill/CLionProjects/llp/cmake-build-debug/program" prefix_auto="0" extension_auto="0"/>
+			<Target title="Makefile/fast">
+				<Option output="/Users/kirill/CLionProjects/llp/cmake-build-debug/Makefile" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir=""/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -73,7 +73,7 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/kirill/CLionProjects/llp/cmake-build-debug/Makefile&quot;  VERBOSE=1 program/fast"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/kirill/CLionProjects/llp/cmake-build-debug/Makefile&quot;  VERBOSE=1 Makefile/fast"/>
 					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/kirill/CLionProjects/llp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j8 -f &quot;/Users/kirill/CLionProjects/llp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/kirill/CLionProjects/llp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -81,7 +81,7 @@
 			</Target>
 		</Build>
 		<Unit filename="/Users/kirill/CLionProjects/llp/hello.asm">
-			<Option target="program"/>
+			<Option target="Makefile"/>
 		</Unit>
 		<Unit filename="/Users/kirill/CLionProjects/llp/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>

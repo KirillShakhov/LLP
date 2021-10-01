@@ -17,4 +17,4 @@ endif()
 
 set_source_files_properties(hello.asm PROPERTIES LANGUAGE ASM_NASM)
 
-add_executable(program  hello.asm)
+add_executable(Makefile hello.asm)

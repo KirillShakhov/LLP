@@ -3,7 +3,7 @@ codes:
     db      '0123456789ABCDEF'
 
 section .text
-global _start
+global print_hex
 
 exit:
     mov     rax, 60         ;  Это функция
@@ -45,9 +45,3 @@ print_hex:
     xor     rdi, rdi
     syscall
     ret
-
-_start:
-   mov rdi, 0x32321
-   push rdi
-   call print_hex
-   call exit

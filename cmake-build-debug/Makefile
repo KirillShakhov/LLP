@@ -117,24 +117,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named program
+# Target rules for targets named Makefile
 
 # Build rule for target.
-program: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 program
-.PHONY : program
+Makefile: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Makefile
+.PHONY : Makefile
 
 # fast build rule for target.
-program/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/build
-.PHONY : program/fast
+Makefile/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile.dir/build.make CMakeFiles/Makefile.dir/build
+.PHONY : Makefile/fast
 
 hello.o: hello.asm.o
 .PHONY : hello.o
 
 # target to build an object file
 hello.asm.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/hello.asm.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile.dir/build.make CMakeFiles/Makefile.dir/hello.asm.o
 .PHONY : hello.asm.o
 
 # Help Target
@@ -145,7 +145,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... program"
+	@echo "... Makefile"
 	@echo "... hello.o"
 .PHONY : help
 
