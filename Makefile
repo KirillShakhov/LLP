@@ -1,4 +1,3 @@
-
 ASM=nasm
 ASMFLAGS=-f elf64
 LD=ld
@@ -13,15 +12,14 @@ LD=ld
 # имя файла для сборки также называется "цель", target
 
 # call.o зависит от файла call.asm. Если изменился файл call.asm, нужно выполнить действие
-print_hex.o: print_hex.asm
+*.o: print_hex.asm
 	$(ASM) $(ASMFLAGS) -o print_hex.o print_hex.asm
+	$(ASM) $(ASMFLAGS) -o call.o call.asm
 
 
-# print_hex.o зависит от call.o но также и транзитивно от call.asm. 
+# print_hex.o зависит от call.o но также и транзитивно от call.asm.
 # Не нужно указывать транзитивные зависимости, make их выводит сам
 
-call.o: call.asm print_hex.o
-	$(ASM) $(ASMFLAGS) -o call.o call.asm
 
 program: call.o print_hex.o
 	$(LD) -o call call.o print_hex.o
